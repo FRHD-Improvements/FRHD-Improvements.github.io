@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/pico.classless.min.css">
+    <title>FRHD Editor CE</title>
+
+    <style>
+      html { 
+        background: url("./static/bg.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #12191F;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>Pinwheel</h1>
+        <h3>A community-built editor for FRHD</h3>
+      </hgroup>
+
+      <!-- <p>This is some text.</p> -->
+    </header>
+
+    <main>
+      <section id="faq">
+        <h2>FAQ</h2>
+
+        <!-- When is it going to be released? -->
+        <details>
+          <summary>When is it going to be released?</summary>
+          <p>Released? Hah! <br><br> Seriously though, it is taking a long time to make on my own. I am working
+            on building off of some awesome work by Calculus, but with the time that school is taking away from
+            personal projects, I am hoping to start a closed alpha in late 2021 to early 2022. The first release
+            will not be as good as the default editor, but I plan to work on it over time, adding new features and
+            fixing bugs until it becomes what I envision for <em>Pinwheel</em>.</p>
+        </details>
+
+        <!-- What have you done so far? -->
+        <details>
+          <summary>What have you done so far?</summary>
+          <p>So far I have created a <b>really</b> fast <a href="https://github.com/FRHD-Improvements/FRTF-Generator">file format</a>,
+            which uses my general-purpose <a href="https://docs.rs/frhd/0.1.53/frhd">rust library</a> <em>(documentation
+            coming soon™)</em>. I am currently working on getting the editor into a usable state.
+        </p>
+        </details>
+
+        <!-- Why are you doing this? -->
+        <details>
+          <summary>Why are you doing this?</summary>
+          <p>I have become dissatisfied with the default editor. For what I plan to add, see the 
+            <a href="#features">features</a> section.</p>
+        </details>
+
+        <!-- Who designed your epic logo? -->
+        <details>
+          <summary>Who designed your <em>epic</em> logo?</summary>
+          <p>It was me 😄</p>
+        </details>
+      </section>
+
+      <section id="features">
+        <h2>Planned Features</h2>
+
+        <p>I am going to have complete feature parity with the default editor by the first public beta. That being said, these <em>extra</em>
+        features are certainly going to make their way into the editor at some point:</p>
+
+        <ul>
+          <li>More powerful curve tool/editor (See the editor <a href="https://cubic-bezier.com">here</a> for an idea).</li>
+          <li>Shapes (circles, squares, hexagons, etc.)</li>
+          <li>Select by points and move/delete</li>
+          <li>Layers</li>
+        </ul>
+
+        <p>Here are the things I will <b>probably</b> add. I wouldn't bet on them though.</p>
+
+        <ul>
+          <li>Scrub through time (I had a video describing this but it appears that it was deleted 🙁).</li>
+          <li>Smoother brush option</li>
+        </ul>
+
+        <p>I am also thinking about possibly having a paid version of the editor once I get it to a good state. The paid version would cost about
+          5 USD, and it would unlock these features:
+        </p>
+
+        <ul>
+          <li>General track gen</li>
+          <li>Image2Track</li>
+          <li>Shaded brushes (Automatically cross-hatch style shading)</li>
+        </ul>
+
+        <p>I would also like to add in-editor publishing and riding (essentially creating a third-party client for FRHD) but as that may cause legal
+          issues with Kano (they make lots of ad revenue on their website!) that may not be possible.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
